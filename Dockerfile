@@ -1,6 +1,9 @@
 FROM jboss/wildfly
 
 ADD helloworld.war /opt/jboss/wildfly/standalone/deployments/
+# Environment variable with default value 
+# ARG APP_FILE=appfile.war
+
 
 ARG WILDFLY_NAME
 ARG CLUSTER_PW
